@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>bubble loading</title>
+        <style type="text/css">
+            .spinner{
+                width: 40px;
+                height: 40px;
+                background-color: green;
+                border-radius: 100%;
+                -webkit-animation: fadeOut 1.0s infinite ease-in-out;
+                animation: fadeOut 1.0s infinite ease-in-out;
+            }
+            @-webkit--keyframes fadeOut{
+                from {-webkit-transform:scale(0.0);}
+                to{-webkit-transform:scale(1.0);opacity:0;}
+            }
+            @keyframes fadeOut{
+                from {transform:scale(0.0);}
+                to{transform:scale(1.0);opacity:0;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="spinner"></div>
+    </body>
+</html>
