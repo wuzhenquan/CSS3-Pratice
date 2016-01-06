@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>rotate-loading</title>
+        <style type="text/css">
+            .spinner{
+                width: 10em;
+                height: 10em;
+                margin:100px auto;
+                border: 1.1em solid #ccc;
+                border-left-color: #000;
+                border-radius: 50%;
+                -webkit-animation:load 1.1s infinite linear;
+            }
+            @-webkit-keyframes load{
+                from{
+                    transform: rotate(0deg);
+                }
+                to{
+                    transform:rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="spinner"></div>
+    </body>
+</html>
