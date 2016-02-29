@@ -11,7 +11,8 @@
                 border-radius: .5em;
                 /*第一个是property, 第二个是duration, 第三个是timing-function, 第四个是delay*/
                 transition: background 1s linear 0.5s, border-radius 1s ease-in 0.5s;
-
+                /*实际上 出了第一个时间表示的是duration, 第二个时间表示的是delay*/
+                /*其余的顺序都可以打乱*/
             }
             .transition:hover{
                 background: #f794ed;
