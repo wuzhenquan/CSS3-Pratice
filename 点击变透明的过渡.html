@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        
+    </style>
+</head>
+<style>
+    #myDiv{
+        width: 200px;
+        height: 200px;
+        background-color: #72edff;
+        opacity: 0;
+ 
+    }
+ 
+    #myDiv.fade{
+        opacity: 1;
+        transition: all 1s linear;
+    }
+</style>
+    
+<body>
+    <div id="myDiv"></div>
+    <button>点击让上面的div变透明</button>
+    用opacity:1; 不能用display: none;
+    <script>
+        var btn = document.querySelector("button");
+        btn.addEventListener("click", function(){
+            document.querySelector("#myDiv").className="fade";
+        })
+    </script>
+</body>
+    
+</html>
